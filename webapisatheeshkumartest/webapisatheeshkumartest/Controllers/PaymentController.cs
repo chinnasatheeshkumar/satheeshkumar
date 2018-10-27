@@ -27,6 +27,7 @@ namespace webapisatheeshkumartest.Controllers
             List<PaymentDetail> _PaymentDetailsList = new List<PaymentDetail>();
             try
             {
+                //Get the list for DB with specific conditions
                 var _dbPaymentDetailsList = (from p in Entities.Tables select p).OrderBy(a=>a.ApplicationId).ToList();
                 if(_dbPaymentDetailsList != null && _dbPaymentDetailsList.Any())
                 {
