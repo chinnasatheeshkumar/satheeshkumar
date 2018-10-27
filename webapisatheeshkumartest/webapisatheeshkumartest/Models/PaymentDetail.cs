@@ -22,6 +22,8 @@ namespace webapisatheeshkumartest.Models
         [DataMember]
         public bool IsCleared { get; set; }
         [DataMember]
-        public DateTime ClearedDate { get; set; }
+        public DateTime? ClearedDate { get; set; }
+        [DataMember]
+        public decimal Amount { get; internal set; }
     }
 }
